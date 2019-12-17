@@ -1,5 +1,6 @@
-let gridSize = 20;
-function loadGrid(){
+loadGrid(16);
+function loadGrid(gridSize){
+    clearGrid();
     for(let i = 0; i < gridSize; i++){
         for(let j = 0; j < gridSize; j++){
             let div = document.createElement('div');
@@ -9,5 +10,11 @@ function loadGrid(){
             document.getElementById('container').appendChild(div);
         }
 
+    }
+}
+function clearGrid(){
+    const parent = document.getElementById("container");
+    while (parent.firstChild) {
+        parent.firstChild.remove();
     }
 }

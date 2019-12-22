@@ -1,5 +1,6 @@
 const GRID_SIZE = 850; //Size of the grid for width and height, if you change this you need to change the css property for the container to match
-loadGrid(16);
+let lastUsedSize = 16;
+loadGrid(lastUsedSize);
 function loadGrid(gridSize){
     clearGrid();
     for(let i = 0; i < gridSize; i++){
@@ -12,6 +13,7 @@ function loadGrid(gridSize){
         }
 
     }
+    listen();
 }
 function clearGrid(){
     const parent = document.getElementById("container");
@@ -20,6 +22,18 @@ function clearGrid(){
     }
 }
 
+function reset(){
+    clearGrid();
+    loadGrid(lastUsedSize);
+}
+
+function changeGridSize(){
+    let userInput = window.prompt("Enter how many squares you want for each column and rows. Example: 15 will make a 15x15 grid. ");
+    loadGrid(userInput);
+    lastUsedSize = userInput;
+}
+
+function listen(){
 //selects all div with class grid
 const divs = document.querySelectorAll('div.grid');
 divs.forEach((div) => {
@@ -27,3 +41,4 @@ divs.forEach((div) => {
     div.classList.add('activated');
   });
 });
+}

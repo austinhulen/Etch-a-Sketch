@@ -1,4 +1,4 @@
-const GRID_SIZE = 850; //Size of the grid for width and height, if you change this you need to change the css property for the container to match
+const GRID_SIZE = 600; //Size of the grid for width and height, if you change this you need to change the css property for the container to match
 let lastUsedSize = 16;
 loadGrid(lastUsedSize);
 function loadGrid(gridSize){

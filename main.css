@@ -17,6 +17,6 @@
     margin: auto;
 }
 
-#activated {
+.activated {
     background-color: black;
 }

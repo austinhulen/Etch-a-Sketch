@@ -24,6 +24,7 @@ function clearGrid(){
 const divs = document.querySelectorAll('div.grid');
 divs.forEach((div) => {
   div.addEventListener('mouseenter', (e) => {
-    div.style.backgroundColor = 'black';
+    div.classList.add('activated');
+    console.log('Hello World');
   });
 });

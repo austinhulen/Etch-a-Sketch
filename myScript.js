@@ -25,6 +25,5 @@ const divs = document.querySelectorAll('div.grid');
 divs.forEach((div) => {
   div.addEventListener('mouseenter', (e) => {
     div.classList.add('activated');
-    console.log('Hello World');
   });
 });

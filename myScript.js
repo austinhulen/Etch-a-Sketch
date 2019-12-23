@@ -29,8 +29,13 @@ function reset(){
 
 function changeGridSize(){
     let userInput = window.prompt("Enter how many squares you want for each column and rows. Example: 15 will make a 15x15 grid.");
+    if (userInput > 100){
+        alert("Please enter a number between 0 and 100")
+        return;
+    } else {
     loadGrid(userInput);
     lastUsedSize = userInput;
+    }
 }
 
 function listen(){

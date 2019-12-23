@@ -28,7 +28,7 @@ function reset(){
 }
 
 function changeGridSize(){
-    let userInput = window.prompt("Enter how many squares you want for each column and rows. Example: 15 will make a 15x15 grid. ");
+    let userInput = window.prompt("Enter how many squares you want for each column and rows. Example: 15 will make a 15x15 grid.");
     loadGrid(userInput);
     lastUsedSize = userInput;
 }

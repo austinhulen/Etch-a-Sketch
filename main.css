@@ -1,5 +1,10 @@
+body {
+    font-family: 'Roboto', Arial;
+    background-color: #5CDB95;
+}
+
 #container > div {
-    border-color: black;
+    border-color: #379683;
     border-style: solid;
     border-width: .1px;
     margin: 0px;
@@ -10,13 +15,45 @@
 #container {
     height: 600px; /* Change these to match the Java Script Variable of GRID_SIZE*/
     width: 600px; 
-    border-color: Red;
-    border-width: 50px;
+    border-color: #05386B;
+    border-width: 30px;
     border-style: solid;
     text-align: center;
     margin: auto;
 }
 
 .activated {
-    background-color: black;
+    background-color: #379683;
+}
+
+#etchSketchTitle {
+    text-align: center;
+    font-size: x-large;
+    color: #EDF5E1;
+
+}
+
+button {
+    background-color: #05386B;
+    color: #EDF5E1;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #EDF5E1;
+    color: #05386B;
+  }
+
+#buttons {
+    text-align: center;
 }

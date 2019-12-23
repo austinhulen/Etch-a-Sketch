@@ -6,7 +6,7 @@ body {
 #container > div {
     border-color: #379683;
     border-style: solid;
-    border-width: .1px;
+    border-width: 1px;
     margin: 0px;
     padding: 0px;
     float: left;

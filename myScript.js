@@ -7,8 +7,8 @@ function loadGrid(gridSize){
         for(let j = 0; j < gridSize; j++){
             let div = document.createElement('div');
             div.classList.add('grid');
-            div.style.width = ((GRID_SIZE/gridSize)- .2) + "px";
-            div.style.height = ((GRID_SIZE/gridSize) - .2) + "px";
+            div.style.width = ((GRID_SIZE/gridSize)- 2) + "px";
+            div.style.height = ((GRID_SIZE/gridSize) - 2) + "px";
             document.getElementById('container').appendChild(div);
         }
 
